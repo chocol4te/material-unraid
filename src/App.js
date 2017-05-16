@@ -4,6 +4,7 @@ import { Admin, Delete, Resource } from 'admin-on-rest';
 
 import './App.css';
 import Menu from './Menu';
+import { Dashboard } from './dashboard';
 
 import translations from './lang';
 
@@ -21,6 +22,7 @@ class App extends Component {
             <Admin
                 title="unRAID Server"
                 menu={Menu}
+                dashboard={Dashboard}
                 messages={translations}
             >
             </Admin>
