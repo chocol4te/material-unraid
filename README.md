@@ -39,4 +39,5 @@ Every feature of the existing UI will be ported over to JavaScript in the form o
 | | About | |
 
 \* Needs its own special page, or maybe not at all if each card has a settings menu
+
 \*\* This would be redesigned as a plus icon on the page, that when clicked opens a window for configuring the VM. VMs may have their own card(?)
