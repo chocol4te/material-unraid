@@ -44,6 +44,9 @@ export default {
         vms: {
             name: 'VMs',
         },
+        stats: {
+            name: 'Statistics',
+        },
         tools: {
             name: 'Tools',
         },

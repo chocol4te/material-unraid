@@ -4,7 +4,7 @@ import { Admin, Delete, Resource } from 'admin-on-rest';
 
 import './App.css';
 import Menu from './Menu';
-import { Dashboard } from './dashboard';
+import { Dashboard } from './pages/dashboard';
 
 import translations from './lang';
 

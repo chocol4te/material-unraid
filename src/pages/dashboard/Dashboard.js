@@ -5,7 +5,6 @@ import { AppBarMobile, GET_LIST, GET_MANY } from 'admin-on-rest';
 import Welcome from './Welcome';
 import MonthlyRevenue from './MonthlyRevenue';
 import NbNewOrders from './NbNewOrders';
-import PendingOrders from './PendingOrders';
 import NewCustomers from './NewCustomers';
 //import restClient from '../restClient';
 
@@ -103,7 +102,6 @@ class Dashboard extends Component {
             nbNewCustomers,
             nbNewOrders,
             newCustomers,
-            pendingOrders,
             pendingOrdersCustomers,
             pendingReviewsCustomers,
             revenue,
@@ -120,7 +118,6 @@ class Dashboard extends Component {
                             <NbNewOrders value={nbNewOrders} />
                         </div>
                         <div style={styles.singleCol}>
-                            <PendingOrders orders={pendingOrders} customers={pendingOrdersCustomers} />
                         </div>
                     </div>
                     <div style={styles.rightCol}>
