@@ -1,33 +1,14 @@
-import 'babel-polyfill';
-import React, { Component } from 'react';
-import { Admin, Delete, Resource } from 'admin-on-rest';
+import React from 'react';
+import { jsonServerRestClient, Admin, Resource } from 'admin-on-rest';
 
-import './App.css';
-import Menu from './Menu';
-import { Dashboard } from './pages/dashboard';
+import { PostList } from './pages/posts';
+import { UserList } from './pages/users';
 
-import translations from './lang';
-
-class App extends Component {
-    componentWillMount() {
-        //this.restoreFetch = fakeRestServer();
-    }
-
-    componentWillUnmount() {
-        this.restoreFetch();
-    }
-
-    render() {
-        return (
-            <Admin
-                title="unRAID Server"
-                menu={Menu}
-                dashboard={Dashboard}
-                messages={translations}
-            >
-            </Admin>
-        );
-    }
-}
+const App = () => (
+    <Admin restClient={jsonServerRestClient('http://jsonplaceholder.typicode.com')}>
+        <Resource name="posts" list={PostList} />
+        <Resource name="users" list={UserList} />
+    </Admin>
+);
 
 export default App;
