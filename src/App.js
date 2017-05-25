@@ -13,6 +13,7 @@ import FileFolderShared from 'react-material-icons/icons/file/folder-shared';
 import HardwareDeviceHub from 'react-material-icons/icons/hardware/device-hub';
 import NavigationApps from 'react-material-icons/icons/navigation/apps';
 
+import authClient from './authClient';
 import { Dashboard } from './pages/dashboard.js';
 import { Array } from './pages/array.js';
 import { Shares } from './pages/shares';
@@ -26,7 +27,7 @@ import { Settings } from './pages/settings';
 
 
 const App = () => (
-    <Admin title="unRAID Server" restClient={jsonServerRestClient('http://jsonplaceholder.typicode.com')}>
+    <Admin title="unRAID Server" authClient={authClient} restClient={jsonServerRestClient('http://jsonplaceholder.typicode.com')}>
         <Resource name="dashboard" options={{ label: 'Dashboard' }} list={Dashboard} icon={ActionDashboard} />
         <Resource name="array" options={{ label: 'Array' }} list={Array} icon={DeviceStorage}/>
         <Resource name="shares" list={Shares} icon={FileFolderShared}/>
