@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
 
 export const Dashboard = (props) => (
-    <Card style={{ margin: '1em' }}>
+    <Card>
         <CardHeader title="Dashboard" />
         <CardText>Lorem ipsum sic dolor amet...</CardText>
     </Card>

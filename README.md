@@ -3,11 +3,12 @@ To be honest, this is more my personal learning than a serious effort to replace
 
 Every feature of the existing UI will be ported over to JavaScript in the form of cards. Each card has it's own file, and can be managed and categorized independently. This allows the end user to re-arrange their UI however they wish. EG Array devices card could be moved to dashboad, active users card moved to other page.
 
-| Description of issue | Solution | Completed |
-| --- | --- | --- |
-| Switching tabs is slow, whole page must reload | Create a Single Page Application, where switching tabs is instant | |
-| Sluggish to interact with. (Changing settings takes time, 1 Hz refresh of stats) | React uses an observer model for changes, and can occur in the background while the user continues working (No more waiting for a refresh) | |
-| Occasional rendering issues, such as floating text or overlapping elements | Using a JavaScript framework instead of plain HTML and CSS may fix these issues | |
+| Description of issue | Solution |
+| --- | --- |
+| Switching tabs is slow, whole page must reload | Create a Single Page Application, where switching tabs is instant |
+| Sluggish to interact with. (Changing settings takes time, 1 Hz refresh of stats) | React uses an observer model for changes, and can occur in the background while the user continues working (No more waiting for a refresh) |
+| Occasional rendering issues, such as floating text or overlapping elements | Using a JavaScript framework instead of plain HTML and CSS may fix these issues |
+| Overall theme doesn't seem very unified | Material UI design will hopefully make it easier to maintain consisten colours and styles |
 
 
 | Category | Feature | Completed |
