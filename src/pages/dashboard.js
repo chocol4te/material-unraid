@@ -7,4 +7,5 @@ export const Dashboard = (props) => (
         <CardHeader title="Dashboard" />
         <CardText>Lorem ipsum sic dolor amet...</CardText>
     </Card>
+    
 );

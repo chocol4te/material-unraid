@@ -18,5 +18,14 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "webpack --progress -p —-config webpack.config.js"
-  }
+  },,
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocol4te/material-unraid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chocol4te/material-unraid/issues"
+  },
+  "homepage": "https://github.com/chocol4te/material-unraid#readme"
 }
