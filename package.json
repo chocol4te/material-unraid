@@ -22,7 +22,9 @@
     "compression-webpack-plugin": "^0.4.0",
     "css-loader": "^0.28.3",
     "gh-pages": "^1.0.0",
+    "jscrambler-loader": "^2.0.2",
     "webpack": "^2.6.1",
+    "webpack-bundle-analyzer": "^2.8.2",
     "webpack-dev-server": "^2.4.5"
   },
   "scripts": {
@@ -32,13 +34,5 @@
     "eject": "react-scripts eject",
     "deploy": "webpack --progress -p"
   },
-  "main": "webpack.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chocol4te/material-unraid.git"
-  },
-  "bugs": {
-    "url": "https://github.com/chocol4te/material-unraid/issues"
-  },
-  "homepage": "https://github.com/chocol4te/material-unraid#readme"
+  "main": "webpack.config.js"
 }
