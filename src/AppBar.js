@@ -5,12 +5,30 @@ import MuiAppBar from 'material-ui/AppBar';
 import muiThemeable from 'material-ui/styles/muiThemeable';
 import compose from 'recompose/compose';
 import { toggleSidebar as toggleSidebarAction } from 'admin-on-rest';
-import FlatButton from 'material-ui/FlatButton';
+import IconButton from 'material-ui/IconButton';
+
+import ActionPowerSettingsNew from 'react-material-icons/icons/action/power-settings-new';
+import ActionReceipt from 'react-material-icons/icons/action/receipt';
+import ActionHelp from 'react-material-icons/icons/action/help';
+import ActionInfo from 'react-material-icons/icons/action/info';
+import ActionFeedback from 'react-material-icons/icons/action/feedback';
+
+const iconStyle = {
+    backgroundColor: 'transparent',
+    color: 'white'
+};
+
+const hoveredStyle = {
+    //backgroundColor: 'grey300'
+};
 
 const rightButtons = (
     <div>
-        <FlatButton label="Test1"/>
-        <FlatButton label="Test2"/>
+        <IconButton iconStyle={iconStyle} hoveredStyle={hoveredStyle}><ActionFeedback/></IconButton>
+        <IconButton iconStyle={iconStyle} hoveredStyle={hoveredStyle}><ActionHelp/></IconButton>
+        <IconButton iconStyle={iconStyle} hoveredStyle={hoveredStyle}><ActionInfo/></IconButton>
+        <IconButton iconStyle={iconStyle} hoveredStyle={hoveredStyle}><ActionReceipt/></IconButton>
+        <IconButton iconStyle={iconStyle} hoveredStyle={hoveredStyle}><ActionPowerSettingsNew/></IconButton>
     </div>
 );
 
