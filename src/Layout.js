@@ -8,10 +8,10 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import {
     AdminRoutes,
     Sidebar,
-    AppBar,
     Notification,
     setSidebarVisibility as setSidebarVisibilityAction
 } from 'admin-on-rest';
+import AppBar from './AppBar';
 
 //injectTapEventPlugin();
 
@@ -43,6 +43,10 @@ const styles = {
         right: 0,
         margin: 16,
         zIndex: 1200,
+    },
+    button: {
+        backgroundColor: 'transparent',
+        color: 'white'
     },
 };
 
