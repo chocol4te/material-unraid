@@ -1,6 +1,8 @@
 path = require('path');
 const webpack = require('webpack');
 
+var CompressionPlugin = require("compression-webpack-plugin");
+
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: './src/index.js',
@@ -23,6 +25,15 @@ module.exports = {
     'process.env': {
       'NODE_ENV': JSON.stringify('production')
     }
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin()
   })
   ],
 };
+
+app.get('*.js', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  next();
+});
